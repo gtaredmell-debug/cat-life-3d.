@@ -1,0 +1,24 @@
+config_version=5
+
+[application]
+config/name="Cat Life 3D"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.4", "GL Compatibility")
+config/description="A cozy 3D cat life simulator prototype for Android."
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.45, 0.68, 0.82, 1)
+
+[input]
+move_forward={
+"deadzone": 0.2,
+"events": []
+}
